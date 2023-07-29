@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main2.js" ></script>
+    <title>acceuil</title>
+    <style>
+  /* pop up teb3a el bronz buy */
+      .popup{
+  width:200px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top:0%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0px 30px 30px;
+  color: black;
+  visibility: hidden;
+      }
+      .popup img{
+  width:50px;
+}
+.popup button{
+  width: 50%;
+  background: #964b00;
+  color:white;
+  border: 0;
+  outline: none;
+  font-size:18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0,0,0, 0.2);
+}
+.open-popup{
+  top:50%;
+  visibility: visible;
+  transform: translate(-50%,-50%) scale(1); 
+}
+
+/* pop up teb3a el silver  */
+.popup2{
+  width:200px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top:0%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0px 30px 30px;
+  color: black;
+  visibility: hidden;
+      }
+      .popup2 img{
+  width:50px;
+}
+.popup2 button{
+  width: 50%;
+  background: #696969;
+  color:white;
+  border: 0;
+  outline: none;
+  font-size:18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0,0,0, 0.2);
+}
+.open-popup2{
+  top:50%;
+  visibility: visible;
+  transform: translate(-50%,-50%) scale(1); 
+}
+
+/* popup teb3a el gold */
+
+.popup3{
+  width:200px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top:0%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0px 30px 30px;
+  color: black;
+  visibility: hidden;
+      }
+      .popup3 img{
+  width:50px;
+}
+.popup3 button{
+  width: 50%;
+  background: #ffcb11;
+  color:white;
+  border: 0;
+  outline: none;
+  font-size:18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0,0,0, 0.2);
+}
+.open-popup3{
+  top:50%;
+  visibility: visible;
+  transform: translate(-50%,-50%) scale(1); 
+}
+    </style>
+</head>
+<body>
+    <!-- this is nav part -->
+    <div class="main">
+        <video autoplay loop muted plays-inline class="bgvideo">
+            <source src="1DX Mark III - Cinematic Gym Fitness Video.mp4"  type="video/mp4">
+        </video>
+    <nav>
+        <img src="1.png" class="logo">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#aboutus">about us</a></li>
+            <li><a href="#ourcourses">courses</a></li>
+            <li><a href="#tsub">subscription</a></li>
+            <li><a href="#mobile app">mobile app</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+    <div class="content" >
+        <h1 id="home">go gym</h1>
+        <a  id="btn1" href="register.html">login</a>
+    </div>
+    </div>
+    
+    <!-- this is second part -->
+    <div class="bg">
+        <h1 id="aboutus">about go gym</h1>
+        <pre>       Go gym was founded by hiba in 2023 
+             its contains a lot of diffrent sport domains
+             click to know more 
+        </pre>
+        <a href="see.html"  id="btn2" ><span>see more</span></a>
+    </div>
+    <div class="bg2">
+    </div>
+
+    <!-- this is card part -->
+    <h1 id="ourcourses"> our courses</h1>
+
+    <div class="container">
+
+      <div class=" card item1 ">
+        <img src="w2-transformed.jpeg">
+        <div class="info">
+        <h1 class="card-title">women section</h1>
+        <button   class="card-btn"  id="link1">see more</button>
+        </div>
+        </div>
+
+      <div class="card  item2">
+        <img src="w3-transformed.jpeg">
+        <div class="info">
+        <h1 class="card-title">callisthenics</h1>
+        <button class="card-btn"  id="link2">see more</button>
+        </div>
+      </div>
+
+      <div class="card item3">
+        <img src="w4-transformed.jpeg">
+        <div class="info">
+        <h1 class="card-title">cardio</h1>
+        <button class="card-btn"  id="link3">see more</button>
+        </div>
+      </div>
+
+      <div class="card item4">
+        <img src="w-ohWNsqnQT-transformed.jpeg">
+        <div class="info">
+        <h1 class="card-title">lifting </h1>
+        <button class="card-btn"  id="link4" >see more</button>
+      </div>
+      </div>
+    </div>
+  
+    <!-- subscription part -->
+    <h1 id="tsub">subscription</h1>
+    
+    <div class="sub">
+
+      <div class="card2 bronz">
+        <div class="buy-content">
+          <div class="buy-title bt1 ">bronz</div>
+          <p class="card-description">100Dt/month</p>
+          <button class="buy-button b1 " onclick="openPopup()" >buy</button>
+          <div class="popup" id="popup1">
+            <img src="brown.png">
+            <h2>Thanks for buying</h2>
+            <button id="ok" onclick="closePopup()">ok</button>
+          </div>
+         </div>
+      </div>  
+
+      <div class="card2 silver">
+        <div class="buy-content">
+          <div class="buy-title bt2">silver</div>
+          <p class="card-description">500Dt/6month</p>
+          <ul class="benefits">
+            <li>free protein food</li>
+          </ul>
+          <button class="buy-button b2" onclick="showPup()" >buy</button>
+          <div class="popup2" id="popup2" >
+            <img src="gray.png">
+            <h2>Thanks for buying</h2>
+            <button id="ok" onclick="closePup()">ok</button>
+          </div>
+        </div>
+      </div>  
+      
+      <div class="card2 golden">
+        <div class="buy-content">
+          <div class="buy-title bt3 ">golden</div>
+          <p class="card-description">900DT/year.</p>
+          <ul class="benefits">
+            <li>vip parking</li>
+            <li>vip coach</li>
+            <li>free protein food</li>
+          </ul>
+          <button class="buy-button b3" onclick="opnPup()" >buy</button>
+          <div class="popup3" id="popup3" >
+            <img src="goldenpng.png">
+            <h2>Thanks for buying</h2>
+            <button id="ok" onclick="clsPup()">ok</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- app part  -->
+
+    <div class="app" id="mobile app">
+      <div class="container2" >
+        <h2 >install our app</h2>
+        <p>join us in our app by entreing your mobile number</p>
+        <input id="tel" type="tel" placeholder="enter your number" required>
+        <button class="btn-app"  >register</button>
+        <img id="icons" src="pngegg.png">
+      </div>
+    </div>
+
+    <!-- this is grid part -->
+
+     <div class="grid">
+      <div class="gridtitle">
+        @go gym insta</div>
+      <div class="loula"></div>
+      <div class="thenia"></div>
+      <div class="theltha"></div>
+      <div class="rab3a"></div>
+     </div>
+
+     <!-- footer part -->
+
+     <div class="footer" id="contact">
+
+      <div class="newsletter">
+        <h1>lets stay in contact </h1>
+        <h2>to get our updates</h2>
+        <input id="email" type="email" placeholder="enter your email" required>
+        <input id="ism" type="text" placeholder="enter your name" required>
+        <textarea id="free" rows="4" cols="5" placeholder="enter your messaage">
+        </textarea>
+        <button class="btn-contact">contact done</button>
+      </div>
+
+      <div class="socialmed">
+        <h1>for more contact</h1>
+        <p>tel::(+216) 11111111</p>
+        <p>tel::(+216) 11111111</p>
+        <p>adress :::Rue-monplaisir-tunisie</p>
+        <img class="socialimg" src="social4-removebg-preview.png">
+      </div>
+       
+
+
+
+
+     </div>
+    
+</body>
+</html>
